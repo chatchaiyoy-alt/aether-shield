@@ -3,52 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS App | Sovereignty Calculator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
+    <title>Aether Shield | สถาบันพิทักษ์อธิปไตยดิจิทัล</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <style>
-        :root { --paper: #f4f1ea; --ink: #1c2e4a; --gold: #b8860b; }
-        body { margin: 0; background: var(--paper); font-family: 'Prompt', sans-serif; color: var(--ink); padding: 20px; }
-        .app-card { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h1 { font-size: 1.2rem; border-bottom: 2px solid var(--gold); padding-bottom: 10px; text-transform: uppercase; }
-        .control-group { margin: 25px 0; }
-        label { display: block; margin-bottom: 10px; font-size: 0.9rem; }
-        input[type="range"] { width: 100%; accent-color: var(--gold); cursor: pointer; }
-        .result-box { text-align: center; background: var(--ink); color: white; padding: 20px; margin-top: 30px; border-radius: 4px; }
-        .score { font-size: 3rem; font-weight: 600; color: var(--gold); }
-        .btn-back { display: inline-block; margin-top: 20px; color: var(--gold); text-decoration: none; font-size: 0.8rem; }
+        :root {
+            --paper: #f4f1ea;
+            --ink: #1c2e4a;
+            --gold: #b8860b;
+            --accent: #d4af37;
+        }
+        body {
+            margin: 0;
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'Prompt', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .frame {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            border: 1px solid rgba(28, 46, 74, 0.1);
+            background: white;
+            box-shadow: 20px 20px 60px #d9d6cf, -20px -20px 60px #ffffff;
+            position: relative;
+            text-align: center;
+        }
+        .monogram {
+            font-size: 3rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+            border: 3px double var(--gold);
+            display: inline-block;
+            padding: 0 15px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+        .tagline {
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: 30px;
+        }
+        .content {
+            text-align: left;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .pillars {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .pillar-box {
+            border: 1px solid var(--paper);
+            padding: 10px;
+            font-size: 0.8rem;
+            background: var(--paper);
+        }
+        .btn-enter {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 2px solid var(--ink);
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-enter:hover {
+            background: var(--ink);
+            color: var(--paper);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #888;
+            text-align: left;
+            line-height: 1.8;
+        }
+        hr { border: 0; border-top: 1px double var(--gold); margin: 30px 0; }
     </style>
 </head>
 <body>
-<div class="app-card">
-    <h1>📊 ประเมินความเป็นอธิปไตยดิจิทัล</h1>
+<div class="frame">
+    <div class="monogram">AS</div>
+    <h1>🛡️ Aether Shield</h1>
+    <div class="tagline">The Operational Base of Digital Sovereignty</div>
+    <div class="content">
+        <p>ยินดีต้อนรับสู่สถานีกลางแห่งมาตรฐาน <b>OKGI v1.0</b> พื้นฐานปฏิบัติการเพื่อความโปร่งใส ความถูกต้อง และอธิปไตยเหนือกาลเวลา</p>
+        
+        <div class="pillars">
+            <div class="pillar-box"><b>TRACE</b><br>ร่องรอย</div>
+            <div class="pillar-box"><b>ACCESS</b><br>การเข้าถึง</div>
+            <div class="pillar-box"><b>GRACE</b><br>ความบริสุทธิ์</div>
+        </div>
+        
+        <p style="font-size: 0.9rem;">นี่คือจุดเริ่มต้นของการเปลี่ยนผ่านจากดุลยพินิจส่วนบุคคล สู่ตรรกะมาตรฐานสากลที่ตรวจสอบได้</p>
+    </div>
+    <a href="app.html" class="btn-enter">เข้าสู่ฐานปฏิบัติการ</a>
+    <hr>
     
-    <div class="control-group">
-        <label>1. TRACE (ความโปร่งใสของร่องรอย): <span id="v1">50</span>%</label>
-        <input type="range" min="0" max="100" value="50" oninput="calculate('v1', this.value)">
-    </div>
-    <div class="control-group">
-        <label>2. ACCESS (อิสรภาพในการเข้าถึง): <span id="v2">50</span>%</label>
-        <label>2. ACCESS (อิสรภาพในการเข้าถึง): <span id="v2">50</span>%</label>
-        <input type="range" min="0" max="100" value="50" oninput="calculate('v2', this.value)">
-    </div>
-    <div class="control-group">
-        <label>3. GRACE (ความบริสุทธิ์ของระบบ): <span id="v3">50</span>%</label>
-        <input type="range" min="0" max="100" value="50" oninput="calculate('v3', this.value)">
-    </div>
-    <div class="result-box">
-        <div class="score" id="total">50.00</div>
-        <div>Sovereignty Score (v1.0)</div>
-    </div>
-    <a href="index.html" class="btn-back">← กลับหน้าหลัก</a>
+    <footer>
+        <b>Architect:</b> Yingyai Phuwongsri<br>
+        <b>Email:</b> yingyaiphuwongsri@gmail.com<br>
+        <b>Official Contact:</b> admin@thaiaircareer.com<br>
+        <b>Standard:</b> OKGI THAILAND Canonical v1.0<br>
+        Licensed under CC BY-SA 4.0
+    </footer>
 </div>
-<script>
-    let vals = { v1: 50, v2: 50, v3: 50 };
-    function calculate(id, value) {
-        vals[id] = parseInt(value);
-        document.getElementById(id).innerText = value;
-        let avg = (vals.v1 + vals.v2 + vals.v3) / 3;
-        document.getElementById('total').innerText = avg.toFixed(2);
-    }
-</script>
 </body>
 </html>
