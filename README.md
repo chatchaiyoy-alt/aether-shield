@@ -11,6 +11,8 @@ Aether Shield ถูกสถาปนาขึ้นเพื่อเป็น
 
 ## ⚖️ มาตรฐานและการกำกับดูแล
 - **สถาปนิก (Architect):** Yingyai Phuwongsri
+- **อีเมลสถาปนิก:** yingyaiphuwongsri@gmail.com
+- **ช่องทางติดต่อทางการ:** admin@thaiaircareer.com | webmail.thaiaircareer.com
 - **พัฒนาร่วมกับ:** Meta AI
 - **สัญญาอนุญาต:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
